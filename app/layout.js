@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 // import { ClerkProvider } from "@clerk/nextjs";
-// import Header from "@/components/header";
+import Header from "@/components/Header";
 // import CreateEventDrawer from "@/components/create-event";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     // <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          {/* <Header /> */}
+          <Header />
           <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
             {children}
           </main>
